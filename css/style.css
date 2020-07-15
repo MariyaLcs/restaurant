@@ -1,0 +1,49 @@
+body {
+  background-color: #fcf5c7;
+  color: #141414;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.bg_main {
+  background-color: #141414;
+}
+
+.header_body {
+  background-color: #c0ccc6;
+  color: hsl(0, 0%, 8%);
+  font-size: 24px;
+}
+.bg_main1 {
+  background-color: #bdbe5e;
+}
+.bg_main2 {
+  background-color: #cd8505;
+}
+
+#main-header .port-item {
+  width: 30%;
+  color: #141414;
+  font-weight: bold;
+}
+
+#main-header .port-item:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+#main {
+  width: 100%;
+}
+
+#logo {
+  width: 20vw;
+}
+
+@media (min-width: 1199px) {
+  .port-item {
+    padding: 2em !important;
+  }
+  .header_body {
+    font-size: 42px;
+  }
+}
