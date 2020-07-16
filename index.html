@@ -142,7 +142,7 @@
         </div>
       </div>
       <!-- Menu -->
-      <div id="menu" class="collapse">
+      <div id="menu" class="collapse show">
         <div class="card card-body bg_main2 py-3">
           <h2>Restaurant Top Chef Dishes</h2>
           <p>
@@ -230,7 +230,7 @@
         </div>
       </div>
       <!-- Events -->
-      <div id="events" class="collapse">
+      <div id="events" class="collapse show">
         <div class="card card-body bg_main1 py-3">
           <h2>Restaurant Events</h2>
           <p>
@@ -289,7 +289,7 @@
         </div>
       </div>
       <!-- Order -->
-      <div id="order" class="collapse">
+      <div id="order" class="collapse show">
         <div class="card card-body bg_main2 py-3">
           <h2>Restaurant Takeaway</h2>
           <h3>
@@ -394,10 +394,10 @@
       });
       // Get the current year for the copyright
       $("#year").text(new Date().getFullYear());
-      $(document).on("click", '[data-toggle="lightbox"]', function (e) {
-        e.preventDefault();
-        $(this).ekkoLightbox();
-      });
+      // $(document).on("click", '[data-toggle="lightbox"]', function (e) {
+      //   e.preventDefault();
+      //   $(this).ekkoLightbox();
+      // });
     </script>
   </body>
 </html>
