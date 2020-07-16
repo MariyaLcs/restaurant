@@ -4,12 +4,13 @@ body {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
-.bg_main {
+.bg_main,
+#main_footer {
   background-color: #141414;
 }
 
 .header_body {
-  background-color: #c0ccc6;
+  background-color: #adf7b6;
   color: hsl(0, 0%, 8%);
   font-size: 24px;
 }
@@ -18,6 +19,9 @@ body {
 }
 .bg_main2 {
   background-color: #cd8505;
+}
+.border_left {
+  border-left: #141414 4px solid;
 }
 
 #main-header .port-item {
@@ -34,12 +38,29 @@ body {
 
 #main {
   width: 100%;
-  height: 86%;
   border: #141414 4px solid;
+}
+#map {
+  position: absolute;
+  height: 100%;
+  width: 97%;
+  padding: 0px;
+  margin: 0px;
+  left: 0px;
+  top: 0px;
+}
+.white_border {
+  border: 4px solid white;
 }
 
 #logo {
   width: 20vw;
+}
+
+#main_footer {
+  margin-top: auto;
+  padding: 1vh;
+  bottom: 0;
 }
 
 @media (min-width: 1199px) {
