@@ -26,6 +26,9 @@ body {
 .border_left {
   border-left: #141414 4px solid;
 }
+.img_pasta {
+  width: 100vw;
+}
 
 #main-header .port-item {
   width: 30%;

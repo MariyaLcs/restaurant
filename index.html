@@ -16,6 +16,10 @@
       integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css"
+    />
     <link rel="stylesheet" href="css/style.css" />
     <title>e.GO Restaurant</title>
   </head>
@@ -75,7 +79,7 @@
                   <div
                     class="port-item p-4 bg_main2"
                     data-toggle="collapse"
-                    data-target="#menus"
+                    data-target="#menu"
                   >
                     <i class="fa fa-coffee fa-2x d-block"></i>
                     <span class="d-none d-sm-block">Menu</span>
@@ -137,7 +141,94 @@
           </div>
         </div>
       </div>
-
+      <!-- Menu -->
+      <div id="menu" class="collapse">
+        <div class="card card-body bg_main2 py-3">
+          <h2>Restaurant Top Chef Dishes</h2>
+          <p>
+            Enjoy freshly cooked Mediterranean food, wine and cocktails set in
+            the heart of the village.
+          </p>
+        </div>
+        <div class="card card-body py-5">
+          <div class="row no-gutters">
+            <div class="col-md-3">
+              <a href="./img/pasta.jpg" data-toggle="lightbox">
+                <img
+                  src="./img/pasta.jpg"
+                  alt="pasta 1"
+                  class="img-fluid img_pasta"
+                />
+              </a>
+            </div>
+            <div class="col-md-3">
+              <a href="./img/pasta3.jpg" data-toggle="lightbox">
+                <img
+                  src="./img/pasta3.jpg"
+                  alt="pasta 2"
+                  class="img-fluid img_pasta"
+                />
+              </a>
+            </div>
+            <div class="col-md-3">
+              <a href="./img/pasta4.jpg" data-toggle="lightbox">
+                <img
+                  src="./img/pasta4.jpg"
+                  alt="pasta 3"
+                  class="img-fluid img_pasta"
+                />
+              </a>
+            </div>
+            <div class="col-md-3">
+              <a href="./img/pasta5.jpg" data-toggle="lightbox">
+                <img
+                  src="./img/pasta5.jpg"
+                  alt="pasta 4"
+                  class="img-fluid img_pasta"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="row no-gutters">
+            <div class="col-md-3">
+              <a href="./img/pasta6.jpg" data-toggle="lightbox">
+                <img
+                  src="./img/pasta6.jpg"
+                  alt="pasta 5"
+                  class="img-fluid img_pasta"
+                />
+              </a>
+            </div>
+            <div class="col-md-3">
+              <a href="./img/pasta7.jpg" data-toggle="lightbox">
+                <img
+                  src="./img/pasta7.jpg"
+                  alt="pasta 6"
+                  class="img-fluid img_pasta"
+                />
+              </a>
+            </div>
+            <div class="col-md-3">
+              <a href="./img/risotto.jpg" data-toggle="lightbox">
+                <img
+                  src="./img/risotto.jpg"
+                  alt="pasta 7"
+                  class="img-fluid img_pasta"
+                />
+              </a>
+            </div>
+            <div class="col-md-3">
+              <a href="./img/pasta.jpg" data-toggle="lightbox">
+                <img
+                  src="./img/pasta.jpg"
+                  alt="pasta 8"
+                  class="img-fluid img_pasta"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
       <!-- Events -->
       <div id="events" class="collapse">
         <div class="card card-body bg_main1 py-3">
@@ -231,6 +322,7 @@
       integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
 
     <script>
       $(".port-item").click(function () {
@@ -238,6 +330,10 @@
       });
       // Get the current year for the copyright
       $("#year").text(new Date().getFullYear());
+      $(document).on("click", '[data-toggle="lightbox"]', function (e) {
+        e.preventDefault();
+        $(this).ekkoLightbox();
+      });
     </script>
   </body>
 </html>
